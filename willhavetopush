@@ -1,0 +1,65 @@
+Bserach
+def accept_input(A):
+    n = int(input("Enter the number of elements to be entered :"))
+    for i in range(n):
+        acc_id =int(input("enter the element :"))
+        A.append(acc_id)
+        
+        
+def BinSearch(A,k):
+    n = len(A)
+    low = 0
+    high = n-1
+    mid = (low +high)/2
+    while(low<=high):
+        if(A[mid] == key):
+            return mid;
+        elif(A[mid] > key):
+            high = mid-1
+        else :
+            low = mid +1
+            
+def main():
+    key = int(input("Enter the key element to be found :"))
+    cust_acc = []
+    temp = accept_input(cust_acc)
+    sortedarr = temp.sort()
+    BinSearch(sortedarr,key)
+    
+    
+main()    
+
+
+Linear Search
+def accept_input(A):
+    n = int(input("Enter the number of elements to be entered :"))
+    for i in range(n):
+        acc_id =int(input("enter the element :"))
+        A.append(acc_id)
+        
+def linearSearch(A,k):
+    n = len(A)
+    for i in range(n):
+        if(A[i] == k):
+            return i;
+   
+    
+def main():
+    cust_acc = []
+    accept_input(cust_acc)
+    key = int(input("Enter the element to be found :"))
+    flag = linearSearch(cust_acc,key)
+    if(flag == 0):
+        print("Element  Not Found")
+        
+    return 0;
+    
+main()
+    
+    
+    
+    
+    
+    
+    
+    
