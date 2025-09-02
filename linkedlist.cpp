@@ -44,26 +44,42 @@ void Linkedlist :: addStudent( ){
 }
 
 void Linkedlist :: display(){
+    // if(head == NULL){
+    //     cout<<"LIST IS EMPTY"<<endl;
+    // }else{
+    //     Node *temp1 = head ;
+    //     while(temp1 -> next != NULL){
+    //         cout<<roll_no<<endl;
+    //         cout << marks ;
+    //         cout << studentName;
+    //         temp1 = temp1 -> next;
+    //     }
+    //     temp1 -> next = 
+    // }
+    int num = 0;
+    Node *newNode = head;
+    while(newNode != NULL){
+        cout<<newNode -> studentName << "" ;
+        cout << newNode -> marks << "" ;
+        cout<< newNode -> roll_no << "  ";
+       newNode =newNode -> next ;
+        num = num + 1;
+    }
+    cout<<"Number of nodes is :"<<num<<endl;
 
 }
 
 int main(){
+ 
+  
+    Linkedlist l1 ;
 
-    int n ;
-
-    cout<<"Enter the number of student details to be added :"<< endl;
-    cin >> n ;
-    for(int i =0 ;i<n;i++){
-        
-    }
-
-
-    // Linkedlist l1 ;
-    // Linkedlist l2 ;
-    // Linkedlist l3;
-    // l1.addStudent();
-    // l2.addStudent();
-    // l3.addStudent();
+    l1.addStudent();
+    l1.addStudent();
+    l1.addStudent();
+    l1.display();
+    // l1.display();
+    // l1.display();
 }
 
 
